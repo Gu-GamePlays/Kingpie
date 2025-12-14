@@ -1,0 +1,129 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY (FOOTER FIXO NO FUNDO) */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/cortiça.jfif');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ELEMENTOS EM TELA CHEIA */
+header,
+footer,
+.parallax {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    background: #8b4a36;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* PARALLAX (TÍTULO EM CIMA, LISTA EMBAIXO) */
+.parallax {
+    height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+/* IMAGENS PARALLAX */
+.parallax1 {
+    background-image: url('img/tortaalema.jpg');
+    height: 300px;
+}
+
+.parallax3 {
+    background-image: url('img/bolobombom.jpg');
+    height: 250px;
+}
+
+/* TÍTULOS NO PARALLAX */
+.parallax h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+/* LISTAS */
+.lista {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+}
+
+.lista li {
+    margin: 8px 0;
+}
+
+/* CARD */
+.card {
+    width: 100%;
+    margin: 40px 0;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+/* BOTÕES */
+.botao {
+    display: inline-block;
+    background: #ffffff;
+    color: #160000;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #8b4a36;
+    color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    background: #8b4a36;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO (CELULAR) */
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        height: 220px;
+    }
+
+    .parallax h2 {
+        font-size: 1.6rem;
+    }
+
+    .lista {
+        font-size: 1rem;
+    }
+}
